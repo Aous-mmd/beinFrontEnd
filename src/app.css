@@ -1,11 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
-}
-
-#app {
-  height: 100%;
 }
 
 .login {
@@ -13,4 +8,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.loginForm {
+    width: 30%;
+    margin: 0 auto;
 }
