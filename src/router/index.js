@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import CategoriesView from "../views/CategoriesView.vue";
 import Login from "../views/LoginView.vue";
 
 const routes = [
@@ -8,8 +9,16 @@ const routes = [
     name: "home",
     component: HomeView,
     props: {
-      username: ''
-    }
+      icon: "mdi-view-dashboard",
+    },
+  },
+  {
+    path: "/categories",
+    name: "Categories",
+    component: CategoriesView,
+    props: {
+      icon: "mdi-shape",
+    },
   },
   {
     path: "/login",
